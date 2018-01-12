@@ -1,0 +1,10 @@
+<h1>ALL THE TEACHERS</h1>
+<div class="teachers-container">
+  <% @teachers.each do |teacher| %>
+  <div class="teacher">
+    <h3><%= teacher.name %></h3>
+    <img src="<%= teacher.photo%>" />
+    <%= link_to teacher.name, teacher_path(teacher) %>
+  </div>
+  <% end %>
+  </div>

@@ -1,0 +1,9 @@
+<h1><%= @teacher.name %></h1>
+
+<img src="<%= @teacher.photo %>" />
+<ul>
+  <% @courses.each do |course| %>
+  <li><%= course.name %></li>
+<% end %>
+</ul>
+<%= link_to "All Teachers", teachers_path %>

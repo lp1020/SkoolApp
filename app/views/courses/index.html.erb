@@ -1,0 +1,9 @@
+<h1>Check out all these WONDERFUL courses!</h1>
+<div class="teachers-container">
+  <ul>
+  <% @courses.each do |course| %>
+
+  <li><%= link_to course.name, course_path(course) %></li>
+  <% end %>
+</ul>
+</div>

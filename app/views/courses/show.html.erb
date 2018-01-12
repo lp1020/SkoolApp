@@ -1,0 +1,12 @@
+<h1><%= @course.name %></h1>
+
+<p>start: <%= @course.start_date %>; End: <%=
+@course.end_date %></p>
+
+<p>Instructor: <%= link_to @teacher.name, teacher_path(@teacher) %></p>
+
+<ul>
+  <% @students.each do |student| %>
+  <li><%= student.info %></li>
+  <% end %>
+  </ul>
